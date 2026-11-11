@@ -22,7 +22,6 @@ do
     _gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     pcall(function() _gui.Parent = _pg end)
 
-    -- Icône en grand au-dessus des textes
     local _icon = Instance.new("ImageLabel")
     _icon.Size = UDim2.new(0, 180, 0, 180)
     _icon.Position = UDim2.new(0.5, -90, 0.5, -190)
@@ -77,7 +76,6 @@ do
     _showText("amusez vous bien avec ce script de merde !", 2.2, 1.4)
     task.wait(0.2)
 
-    -- Fade out de l'icône à la fin (optionnel, garde la cohérence visuelle)
     _fadeOut(_icon)
 
     pcall(function() _gui:Destroy() end)
